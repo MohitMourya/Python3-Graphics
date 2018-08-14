@@ -1,0 +1,92 @@
+from turtle import *
+from random import randint
+
+penup()
+pensize(2)
+goto(-365,250)
+for i in range(50):
+    pd()
+    forward(6)
+    pu()
+    forward(6)
+right(90)
+for i in range(40):
+    pd()
+    forward(5)
+    pu()
+    forward(5)
+right(90)
+for i in range(50):
+    pd()
+    forward(6)
+    pu()
+    forward(6)
+right(90)
+for i in range(40):
+    pd()
+    forward(5)
+    pu()
+    forward(5)
+goto(-365,150)
+right(90)
+for i in range(50):
+    pd()
+    forward(6)
+    pu()
+    forward(6)
+penup()
+goto(-365,50)
+pendown()
+for i in range(50):
+    pd()
+    forward(6)
+    pu()
+    forward(6)
+penup()
+goto(-365,-50)
+pendown()
+for i in range(50):
+    pd()
+    forward(6)
+    pu()
+    forward(6)
+
+t1=Turtle()
+t1.shape("turtle")
+t1.shapesize(1.5)
+t1.color("red")
+t1.penup()
+t1.goto(-360,200)
+t1.pendown()
+
+t2=Turtle()
+t2.shape("turtle")
+t2.shapesize(1.5)
+t2.color("green")
+t2.penup()
+t2.goto(-360,100)
+t2.pendown()
+
+t3=Turtle()
+t3.shape("turtle")
+t3.shapesize(1.5)
+t3.color("blue")
+t3.penup()
+t3.goto(-360,0)
+t3.pendown()
+
+t4=Turtle()
+t4.shape("turtle")
+t4.shapesize(1.5)
+t4.color("yellow")
+t4.penup()
+t4.goto(-360,-100)
+t4.pendown()
+
+for i in range(190):
+    t1.forward(randint(1,5))
+    t2.forward(randint(1,5))
+    t3.forward(randint(1,5))
+    t4.forward(randint(1,5))
+
+exitonclick()
